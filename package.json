@@ -1,0 +1,21 @@
+{
+  "name": "multicolour-hapi-vantage",
+  "version": "1.0.0",
+  "description": "Look into what's happening in real time in your Multicolour-Hapi server with Vantage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "multicolour",
+    "hapi",
+    "vantage",
+    "repl"
+  ],
+  "author": "newworldcode <hello@newworld.codes> (https://newworld.codes)",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "vantage": "^1.6.0"
+  }
+}
