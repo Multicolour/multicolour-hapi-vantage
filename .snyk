@@ -1,0 +1,8 @@
+version: v1.5.0
+ignore: {}
+patch:
+  'npm:engine.io-client:20160426':
+    - vantage > socket.io-client > engine.io-client:
+        patched: '2016-07-07T11:25:28.566Z'
+    - vantage > socket.io > socket.io-client > engine.io-client:
+        patched: '2016-07-07T11:25:28.566Z'
