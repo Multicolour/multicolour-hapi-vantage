@@ -4,7 +4,9 @@
   "description": "Look into what's happening in real time in your Multicolour-Hapi server with Vantage",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "multicolour",
@@ -25,6 +27,8 @@
   "dependencies": {
     "chalk": "^1.1.3",
     "cli-table": "^0.3.1",
-    "vantage": "git+https://github.com/newworldcode/vantage.git"
-  }
+    "vantage": "git+https://github.com/newworldcode/vantage.git",
+    "snyk": "^1.17.0"
+  },
+  "snyk": true
 }
