@@ -54,8 +54,10 @@ class Multicolour_Hapi_Vantage {
           DELETE: "red"
         }
 
+        /* eslint-disable */
         if (log)
           console.log(chalk.blue.bold("$->"), chalk.white.underline(`Waiting for HTTP requests on ${server.info.host}:${server.info.port}`))
+        /* eslint-enable */
 
         server.on("response", (request) => {
           // If we're not logging, exit here.
