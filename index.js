@@ -21,9 +21,9 @@ const randomise = text =>
 const banner = name =>
   ([
     vantage.util.pad("", process.stdout.rows, "\n"),
-    randomise(vantage.util.pad(" ", process.stdout.columns - 2, "#")) + "\n",
+    randomise(vantage.util.pad(" ", process.stdout.columns / 2, "#")) + "\n",
     ` # ${name}` + "\n",
-    randomise(vantage.util.pad(" ", process.stdout.columns - 2, "#")) + "\n"
+    randomise(vantage.util.pad(" ", process.stdout.columns / 2, "#")) + "\n"
   ].join(""))
 
 
