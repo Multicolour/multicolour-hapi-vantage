@@ -38,7 +38,7 @@ class Multicolour_Hapi_Vantage {
 
     const port = multicolour.get("config").get("api_connections").port || 1811
     const name = multicolour.get("package").name
-    const server = Multicolour_Server_Hapi.request("raw")
+    const server = Multicolour_Server_Hapi.request("raw").select("multicolour-server-hapi")
 
     vantage
       .command("debug <state>")
