@@ -1,0 +1,12 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:ws:20160920':
+    - vantage > socket.io > engine.io > ws:
+        patched: '2017-03-09T15:29:53.525Z'
+    - vantage > socket.io-client > engine.io-client > ws:
+        patched: '2017-03-09T15:29:53.525Z'
+    - vantage > socket.io > socket.io-client > engine.io-client > ws:
+        patched: '2017-03-09T15:29:53.525Z'
